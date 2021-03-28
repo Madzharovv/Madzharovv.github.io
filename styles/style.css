@@ -17,45 +17,102 @@ background-color: black;
 
 }
 
-h1{
-padding: 0.5em 0;
-text-align:center;
-color:white;
-font-style: italic;
-border-top: 2px solid #31598C;
-font-size: 3.5em;
-
-}
-
-
-
-h3{
-text-align:left;
-color:white;
-font-style: italic;
-padding-bottom: 2em;
-}
- 
-h4{
-    text-align:left;
-    color:white;
-    font-style: italic;
-    padding-bottom: 2em; 
-    font-size: 2.5em;  
- }
-
-
-p{
-text-align:left;
-color:white;
-font-style: italic;
-margin-bottom: 2em;
-width: 50em;
-}
-
 main{
     width: 50em;
     padding-left: 5em;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+
+
+}
+ .nav-container:before,
+ .nav-container:after {
+    display: block;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 0;
+    background: rgb(0, 47, 255);
+    transition: width 1.2s linear;
+}
+
+
+.nav-container:before {
+    left: 0;
+}
+
+ .nav-container:after {
+    right: 0;
+}
+
+ .nav-container.scrolled {
+    background: rgb(0, 0, 0);
+}
+
+ .nav-container.scrolled:before,
+ .nav-container.scrolled:after {
+    width: 50%;
+}
+
+
+
+ .nav-container .Company-name-nav {
+    color: rgb(0, 47, 255);
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation ul {
+
+    display: flex;
+}
+
+
+.navigation ul li {
+
+    list-style: none outside;
+    padding: 0.6em 1.2em;
+
+}
+
+
+.navigation a {
+    color: rgb(0, 47, 255);
+    text-align: center;
+    text-decoration: none;
+
+    display: flex;
+}
+
+.nav-container.scrolled .navigation a {
+    color:(255, 0, 0);
+}
+
+
+
+.navigation ul li:hover a {
+    color: rgb(0, 47, 255)
+}
+
+.nav-container.scrolled .navigation ul li:hover a {
+    color: rgb(255, 255, 255);
+}
+
+.Title {
+    margin-top: 10em;
+    margin-bottom: 2em;
 }
 .Description{
     margin-bottom: 5em;
