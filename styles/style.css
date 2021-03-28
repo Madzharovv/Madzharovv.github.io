@@ -23,6 +23,7 @@ text-align:center;
 color:white;
 font-style: italic;
 border-top: 2px solid #31598C;
+font-size: 3.5em;
 
 }
 
@@ -34,11 +35,13 @@ color:white;
 font-style: italic;
 padding-bottom: 2em;
 }
- h4{
+ 
+h4{
     text-align:left;
     color:white;
     font-style: italic;
-    padding-bottom: 2em;   
+    padding-bottom: 2em; 
+    font-size: 2.5em;  
  }
 
 
@@ -46,12 +49,29 @@ p{
 text-align:left;
 color:white;
 font-style: italic;
-margin-bottom: 1em;
+margin-bottom: 2em;
+width: 50em;
 }
 
+main{
+    width: 50em;
+    padding-left: 5em;
+}
+.Description{
+    margin-bottom: 5em;
 
-table{
-border-bottom: 2px solid #31598C;
-margin-bottom: 3em;
+}
 
+.content-wrapper{
+display: flex;
+flex-direction: column;
+margin-bottom: 5em;
+}
+
+.images-content-warpper{
+
+    display: grid;
+    grid-column: 2,2fr;
+  padding: 2em;
+    
 }
